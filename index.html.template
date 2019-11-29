@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset=utf-8 />
-        <title>Our Book List</title>
-    </head>
+        <title>/title>
+</head>
     <body>
-        <h1>Book -- List</h1>
-        <p>This is a sampling of the free books available from <a href="https://www.gutenberg.org/wiki/Main_Page">Project Gutenberg</a>.</p>
+        <h1></h1>
+        <p></a>.</p>
         <br>
         <ul>
             <li><a href="http://gutenberg.org/ebooks/45099"> <img src="./images/45099.jpg" width="75" height="100"></a> <u>The Rise of the Russian Empire   </u> by <em>Hector H. Munro    </em> </li>

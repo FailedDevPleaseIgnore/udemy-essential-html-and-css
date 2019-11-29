@@ -1,0 +1,76 @@
+<head> Document wide meta info, aslo the title
+    <meta charset=utf-8 />
+    <title>tags demo page</title>
+</head>
+
+<body> Everything shown on a page is here
+    <p> Paragraph </p>
+    <hX> Header from h1 to h6 </hX>
+    <h1> Header 1</h1>
+    <h6> Header 6</h6>
+    <em> Emphasis (italic)</em>
+    <br> line break </br>
+    <strong> Bold</strong><br>
+    <u> Underline </u><br>
+
+    <a Hyperlink></a>
+    <a href="https://www.gutenberg.org/wiki/Main_Page">hyperlink name</a><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Black_tea_pot_cropped.jpg" width="100" height="100" alt="Teapot" > 
+    ### alt Specifies an alternate text for an image
+
+    <a href="https://upload.wikimedia.org/wikipedia/commons/4/44/Black_tea_pot_cropped.jpg"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Black_tea_pot_cropped.jpg" width="100" height="100" alt="Teapot"> <u>Teapot</u></a>
+    ### image nested within URL, <u> adds additional underlined text
+
+    <a>
+    <ul> Bullet List 
+        <li>Coffee</li> list elements
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+
+    <ol>  Numbered List 
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ol>
+
+    <table>
+        <tr> defines table row, in this case header row
+            <th>Coffee</th>  defines table header 
+            <th>Tea</th>
+            <th>Water</th>
+        </tr>
+        <tr> Another row, in this case with content
+            <td><img src="./beverages/coffee.jpg" width="100" height="100"></td> 
+            ### <td> defines cell within the row 
+            ### width="100" height="100" sets dimentions. setting only one of them will scale the other automatically
+
+            <td><img src="./beverages/tea.jpg" width="100" height="100"></td>
+            <td><img src="./beverages/water.jpg" width="100" height="100"></td> 
+        </tr>
+    </table>
+    <form action="./index.html" method="get"> 
+    # get puts data in URL, use POST when sending anything sensitive
+        <fieldset>
+        <legend>Personal Information</legend>
+        # fieldset groups form elements together.
+
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            # text input field
+            # name="firstname" identifies the field
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+            <input type="submit" value="Submit">
+            <button type="submit" value="Submit" >Submit the answer</button>
+            # URL constructed by GET look like this:
+            # http://127.0.0.1:58080/tags/index.html?firstname=XX&lastname=ZZ&gender=male
+        </fieldset>
+    </form>
+
+</body>

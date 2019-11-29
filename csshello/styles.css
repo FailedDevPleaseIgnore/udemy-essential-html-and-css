@@ -1,0 +1,23 @@
+body {
+    background: #FFFFd6; /*https://www.w3schools.com/colors/colors_picker.asp*/
+}
+
+h1, h2 {
+    background-color: #CCC;
+    border: 3px solid;
+    border-color: #000000;
+    color: #39F;
+    text-align: center;
+}
+
+h2 {
+    color: #FF0000;
+    /*Only color value is overwritten, all other values are inhereted from above*/
+}
+
+p {
+    color: #39F;        
+    border: 1px dashed;
+    text-indent: 50px;
+
+}

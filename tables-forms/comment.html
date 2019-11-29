@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Books Comment Section</title>
+    </head>
+    <body bgcolor="#F1F1F1">
+        <h1>Comment on a book in our collection</h1>
+        <form action="processComment.php"; method=POST> <!-- POST and "post" are equivalent. 
+            When we POST data, it is collected into datastructure and passed. On the contrary, GET appends data to the URL string -->
+            User Name: <input type="text" name="username"> <!--name is used by backend application, can be seen if we use GET
+            http://127.0.0.1:58080/tables-forms/processComment.php?username=+Giorgi&comment=+ -->
+            <br>
+
+            <p>Rate the book from 1 to 5.</p>
+            <input type="radio" name="rating" value="1">1 <!-- Here we see value in combination with name. -->
+            <input type="radio" name="rating" value="2">2 <!-- because those radio buttons have same name, it is the value that distinguishes them --> 
+            <input type="radio" name="rating" value="3">3 <!-- GET url will have: rating=1& -->
+            <input type="radio" name="rating" value="4">4
+            <input type="radio" name="rating" value="5">5
+            <br><br>
+            Comment:<br>
+            <textarea cols="40"; rows="25"; name="comment"> </textarea> <!-- Pay attention that this is not an input field.-->
+            <br>
+            <input type="submit" value="Submit" >
+            <button type="submit" value="Submit" >Submit the answer</button> 
+            <!-- https://stackoverflow.com/questions/37736056/button-type-button-vs-submit/37736165 
+            A button can have a separate value as data, while for an input the data and button text are always the same: -->
+            <button type="reset"; value="Reset">Reset </button>
+        </form>
+        <form action="./index.html"; method="get"> <!-- GET submits data as part of the URL, don't use when dealing with sensitive data-->
+            <input type="submit" value="Home" name="home" id="home" />
+        </form>
+    </body>
+</html>

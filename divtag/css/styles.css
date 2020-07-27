@@ -1,0 +1,60 @@
+img.bookimage {
+    width: 125px;
+    height: 175px;
+}
+
+.pagetitle { /*class declaration*/
+    color: red;
+    font-family: "Seymour One", sans-serif;
+}
+
+
+.footer {
+    color: green;
+}
+
+#booktable { /*ID declaration*/
+    border: 1px solid black;
+    background-color: #DDDDDD; 
+}
+
+/*The difference between an ID and a class is that an ID can be used to 
+identify one element, whereas a class can be used to identify more than one.*/
+#content {
+    color:#cc9900;
+}
+
+p {
+    font-family: "Berkshire Swash", Helvetica, cursive;
+}
+
+td.booktitle { /*valid for all <td> elements with class "booktitle"*/
+    font-family: 'Lobster Two', 'Helvetica', sans-serif;
+    font-size: 25px;
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
+
+td { /*valid for all <td> elements*/
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #b0c4de;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+a:link { /*https://www.w3schools.com/css/css_pseudo_classes.asp*/
+    color: #FF0000;
+}
+
+a:hover {
+    color: #FF00FF;
+}
+
+body {
+    background-color: #F1F1F1;
+}
